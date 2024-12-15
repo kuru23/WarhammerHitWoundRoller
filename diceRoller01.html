@@ -1,0 +1,28 @@
+<html>
+<!--link css and javascript-->
+<link rel="stylesheet" href="style.css">
+<script src="code.js"></script>     
+<head>
+<title>Warhammer dice roller</title>
+
+</head>
+
+<body>
+    <h2>40k Shooting Dice</h2>
+    <input id="BSkill" type="number" min="1" value="4"></input>
+    <label for="BSkill">Ballistic Skill</label><br>
+    <label for="numShots">Number Of Shots</label><br>
+    <input id="numShots" type="number" min="1" value="10"></input>
+    <button id="firstRoll" onclick="rollToHit()">To Hit</button><br><br>
+     <p id="yourHits"></p>
+
+     <h2>Wounding Dice</h2>
+    <input id="Strength" type="number" min="1" value="4"></input>
+    <label for="Strength">Weapon Strength</label>
+    <input id="Toughness" type="number" min="1" value="4"></input>
+    <label for="Toughness">Toughness</label>
+
+    <button id="rollToWound" onclick="rollToWound()">To Wound</button><br>
+    <p id="yourWounds"></p>
+</body>
+</html>
